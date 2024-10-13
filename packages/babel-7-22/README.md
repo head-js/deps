@@ -7,27 +7,24 @@ module.exports = {
   presets: [
     ['@babel/preset-env', {
       exclude: [
-        '@babel/plugin-proposal-class-properties',
-        '@babel/plugin-proposal-private-methods',
-        '@babel/plugin-proposal-logical-assignment-operators',
-        '@babel/plugin-proposal-numeric-separator',
-        '@babel/plugin-proposal-unicode-property-regex',
+        '@babel/plugin-transform-class-properties',
         '@babel/plugin-transform-dotall-regex',
+        '@babel/plugin-transform-logical-assignment-operators',
+        '@babel/plugin-transform-numeric-separator',
+        '@babel/plugin-transform-private-methods',
+        '@babel/plugin-transform-unicode-property-regex',
         '@babel/plugin-transform-unicode-regex',
+        '@babel/plugin-transform-unicode-sets-regex',
       ],
     }]
   ],
 }
 ```
 
-7.18.10 [2022-08-01](https://github.com/babel/babel/releases?page=8)
+7.22.20 [2023-09-16](https://github.com/babel/babel/releases?page=5)
 --
 
-1. 7.15.0，支持 top-level await；支持 Pipe Operator (|>)
-2. 7.16.0，支持 [ESLint@8](https://eslint.org/blog/2021/10/eslint-v8.0.0-released/)
-3. 7.18.0，No more need to manually include the regenerator-runtime helper when compiling generators
-4. 7.18.13 [2022-08-22]
-5. 7.22，DEPRECATED
+1. 7.22，proposal -> transform
     1. @babel/plugin-proposal-async-generator-functions
     2. @babel/plugin-proposal-class-properties
     3. @babel/plugin-proposal-class-static-block
@@ -43,6 +40,15 @@ module.exports = {
     14. @babel/plugin-proposal-private-methods
     15. @babel/plugin-proposal-private-property-in-object
     16. @babel/plugin-proposal-unicode-property-regex
+2. 8.0.0-alpha.0，2023-07-20
+
+7.18.10 [2022-08-01](https://github.com/babel/babel/releases?page=8)
+--
+
+1. 7.15.0，支持 top-level await；支持 Pipe Operator (|>)
+2. 7.16.0，支持 [ESLint@8](https://eslint.org/blog/2021/10/eslint-v8.0.0-released/)
+3. 7.18.0，No more need to manually include the regenerator-runtime helper when compiling generators
+4. 7.18.13 [2022-08-22]
 
 7.12.17 [2021-02-18]
 --
